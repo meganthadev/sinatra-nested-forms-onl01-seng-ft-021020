@@ -8,15 +8,15 @@ class Ship
     @name = args[:name] 
     @weight = args[:weight]
     @height = args[:height]
-    @@all << self
+    SHIPS << self
   end 
   
   def self.all 
-    @@all 
+    SHIPS 
   end   
   
   def self.clear
-    self.destroy_all
+    SHIPS.destroy_all
   end   
   
   
